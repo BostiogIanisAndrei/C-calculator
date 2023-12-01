@@ -8,7 +8,7 @@ float rezultat;
 int debug()
 {
     printf("DEBUG: \n");
-    printf("Primul numar %f \nAl doilea numar %f Operatorul de calcul: %c",numarul1,numarul2,operator);
+    printf("Primul numar %f \nAl doilea numar %f \nOperatorul de calcul: %c",numarul1,numarul2,operator);
 }
 
 int main()
