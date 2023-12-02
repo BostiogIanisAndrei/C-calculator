@@ -8,7 +8,7 @@ float rezultat;
 int debug()
 {
     printf("DEBUG: \n");
-    printf("Primul numar %f \nAl doilea numar %f \nOperatorul de calcul: %c",numarul1,numarul2,operator);
+    printf("Primul numar %f \nAl doilea numar %f Operatorul de calcul: %c",numarul1,numarul2,operator);
 }
 
 int main()
@@ -32,9 +32,17 @@ int main()
             printf("%g - %g = %g\n",numarul1,numarul2,rezultat);
             break;
         case '/':
-            rezultat = numarul1 / numarul2;
-            printf("%g / %g = %g\n",numarul1,numarul2,rezultat);
-            break;
+            if (numarul1 == 0 || numarul2 == 0)
+            {
+                printf("Impartirea la zero nu este posibila\n");
+                break;
+            }
+            else
+            {
+                rezultat = numarul1 / numarul2;
+                printf("%g / %g = %g\n",numarul1,numarul2,rezultat);
+                break;
+            }
         case '*':
             rezultat = numarul1 * numarul2;
             printf("%g * %g = %g\n",numarul1,numarul2,rezultat);
